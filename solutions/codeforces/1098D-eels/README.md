@@ -2,7 +2,9 @@
 
 [Problem](https://codeforces.com/problemset/problem/1098/D) · [Original submission](https://codeforces.com/contest/1098/submission/324185125) · [Readable submission](https://codeforces.com/contest/1098/submission/391354249) · Rating **2800**
 
-The task maintains a multiset of eel weights under insertions and deletions and asks for the maximum number of dangerous fights after every operation.
+Eels fight until only one remains. If two eels of weights `a <= b` fight, one survives with weight `a + b`; the fight is **dangerous** when `b <= 2a`.
+
+Starting from an empty multiset, process up to `500,000` insertions and deletions of weights up to `10^9`, with duplicates allowed. After each update, output the maximum possible number of dangerous fights over all orders of fights.
 
 ## Core idea
 
